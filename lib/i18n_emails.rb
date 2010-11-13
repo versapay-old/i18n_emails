@@ -8,6 +8,7 @@ require "i18n_emails/i18n_extension"
 module I18nEmails
   
   mattr_accessor :load_path
+  self.load_path = "config/locales/en"
   
   class Email
     

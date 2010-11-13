@@ -5,7 +5,7 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "i18n_emails"
-    gem.summary = %Q{TODO: one-line summary of your gem}
+    gem.summary = %Q{TODO: the nicer way to create email translations for i18n}
     gem.description = %Q{TODO: longer description of your gem}
     gem.email = "mattvague@gmail.com"
     gem.homepage = "http://github.com/mattvague/i18n_emails"

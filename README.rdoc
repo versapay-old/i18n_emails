@@ -1,6 +1,5 @@
 = i18n_emails
 
-Description goes here.
 
 == Note on Patches/Pull Requests
  
