@@ -1,0 +1,11 @@
+subject: Forgotten password
+
+heading: It's ok, we all forget our passwords sometimes
+# Available interpolation args: username, link
+
+-------------------------------
+Hi %{username},
+
+Click here to reset your password %{link}.
+
+Have a great day!
