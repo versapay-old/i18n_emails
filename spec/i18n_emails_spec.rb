@@ -11,8 +11,8 @@ describe "I18nEmails" do
       email.to_hash["heading"].should == "It's ok, we all forget our passwords sometimes"
     end
     
-    it "should load the email body" do
-      email.to_hash["body"].should == "Hi %{username},\n\nClick here to reset your password %{link}.\n\nHave a great day!"
+    it "should load the email body with newlines converted to paragraph tags" do
+      email.to_hash["body"].should == "<p>Hi %{username},</p>\n\n<p>Click here to reset your password %{link}.</p>\n\n<p>Have a great day!</p>"
     end
     
     context "with a different split" do
@@ -24,7 +24,7 @@ describe "I18nEmails" do
       end
 
       it "should load the email body" do
-        email.to_hash["body"].should == "Hi %{username},\n\nClick here to reset your password %{link}.\n\nHave a great day!"
+        email.to_hash["body"].should == "<p>Hi %{username},</p>\n\n<p>Click here to reset your password %{link}.</p>\n\n<p>Have a great day!</p>"
       end
     end
     
