@@ -10,18 +10,18 @@ The format of an .email file is far more readable for both a developer and a non
 
 == Example email:
 
-subject: Forgotten password
+    subject: Forgotten password
 
-heading: It's ok, we all forget our passwords sometimes
-\# Available interpolation args: username, link
+    heading: It's ok, we all forget our passwords sometimes
+    # Available interpolation args: username, link
 
-\--------------------------------------------
+    --------------------------------------------
 
-Hi %{username},
+    Hi %{username},
 
-Click here to reset your password %{link}.
+    Click here to reset your password %{link}.
 
-Have a great day!
+    Have a great day!
 
 == Notes
 
