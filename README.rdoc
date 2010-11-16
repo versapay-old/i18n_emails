@@ -4,25 +4,6 @@ I18nEmails makes it easy to create and maintain I18n emails in Rails apps.
 
 Using I18n in large Rails apps often results in large and incomprehensible translation files. The idea of splitting up concerns should also apply to translations files and emails in particular. That is why this gem was created.
 
-== Example email using I18nEmails:
-
-subject: Forgotten password
-
-heading: It's ok, we all forget our passwords sometimes
-# Available interpolation args: username, link
-
-\*--------------------------------------------\*
-
-Hi %{username},
-
-Click here to reset your password %{link}.
-
-Have a great day!
-
-== Notes
-
-Anything above the --- is still parsed as YAML, but anything below it becomes the body of the email (line breaks are parsed as <p></p> tags using simple_format)
-
 == Note on Patches/Pull Requests
  
 * Fork the project.
