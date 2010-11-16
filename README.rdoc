@@ -11,7 +11,7 @@ subject: Forgotten password
 heading: It's ok, we all forget our passwords sometimes
 # Available interpolation args: username, link
 
---------------------------------------------
+\--------------------------------------------
 
 Hi %{username},
 
