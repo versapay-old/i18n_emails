@@ -19,8 +19,8 @@ module I18nEmails
     BODY_SPLIT = /^-{3,}\n/
     
     class << self
-      # Recursivly merges the content of all .email files contained the in the
-      # passed in directory into a hash for use in I18n
+      # Returns a hash of the content of all .email files contained the
+      # the specified directory (searches recursivly)
       def load_all(dir = I18nEmails.load_path)
         hash = {}
       
@@ -58,7 +58,5 @@ module I18nEmails
       header, body = @file_contents.split(BODY_SPLIT)
       YAML::load(header).merge({'body' => simple_format(body)})
     end
-
-    
   end
 end
