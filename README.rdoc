@@ -25,7 +25,7 @@ The format of an .email file is far more readable for both a developer and a non
 
 == Notes
 
-Anything above the \---- is still parsed as YAML, but anything below it becomes the body of the email (newlines are converted to <p></p> tags using simple_format)
+Anything above the <code>----</code> is still parsed as YAML, but anything below it becomes the body of the email (newlines are converted to <p></p> tags using simple_format)
 
 == Note on Patches/Pull Requests
  
