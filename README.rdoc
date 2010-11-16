@@ -2,11 +2,11 @@
 
 I18nEmails makes it easy to create and maintain I18n emails in Rails apps.
 
-Using I18n in large Rails apps often results in large and incomprehensible translation files. The idea of splitting up concerns should also apply to translations files and emails in particular. That is why this gem was created.
+Using I18n in large Rails apps often results in large and incomprehensible translation files. The idea of splitting up concerns should also apply to translations files and emails in particular and that is why this gem was created.
 
-I18nEmails allows for the creation of separate files for each email stored in a nested folder structure mirroring your translation file(s) for example: en/notifier/forgotten_password.email instead of en.notifier.forgotten_password in en.yml for fr.yml.
+I18nEmails allows you to create separate translation files for each email (.email) and store them in a nested folder structure mirroring a translation file, for example: config/locales/en/notifier/forgotten_password.email.
 
-The format of an .email file is far more readable for both a developer and a non-technical person, for example:
+The email body content in a .email file is also more readable for both developer and non-technical people then a YAML file.
 
 == Example email:
 
